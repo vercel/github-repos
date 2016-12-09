@@ -1,0 +1,13 @@
+{
+  "name": "zeit-github-projects",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "micro"
+  },
+  "dependencies": {
+    "micro": "^6.1.0",
+    "ms": "^0.7.2",
+    "node-fetch": "^1.6.3"
+  }
+}
