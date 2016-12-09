@@ -43,6 +43,24 @@ function cacheData () {
   })
   .then((data_) => {
     if (!data_) return
+
+    if (!data_.items) {
+      return logError(`Error: GitHub missing \`items\` in response`)
+    }
+
+    // ugly hack because github sometimes doesn't return
+    // all the right search results :|
+    let featured = 0
+    data_.items.forEach(({ name }) => {
+      if (name === 'hyper' || name === 'next.js' || name === 'micro') {
+        featured++
+      }
+    })
+
+    if (featured !== 3) {
+      return logError(`Error: GitHub did not include all projects (${featured})`)
+    }
+
     data = data_.items.map(({ name, description, stargazers_count, html_url }) => ({
       name,
       description,
