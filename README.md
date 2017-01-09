@@ -3,7 +3,15 @@
 Microservice to cache and expose GitHub projects to `/oss` for the
 ▲ZEIT homepage.
 
-## How to run
+## Usage
+
+Simply install the dependencies:
+
+```bash
+npm install
+```
+
+And run the server:
 
 ```bash
 npm start
