@@ -36,4 +36,4 @@ You can use `npm test` to run the tests and see if your changes have broken anyt
 
 ## Author
 
-Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo)) - [▲ZEIT](https://zeit.co)
+Guillermo Rauch ([@rauchg](https://twitter.com/rauchg)) - [▲ZEIT](https://zeit.co)
