@@ -1,7 +1,6 @@
 # github-projects
 
-Microservice to cache and expose GitHub projects to `/oss` for the
-▲ZEIT homepage.
+Microservice to cache and expose GitHub projects for [this page](https://zeit.co/oss).
 
 ## Usage
 
