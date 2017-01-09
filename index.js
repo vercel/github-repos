@@ -30,7 +30,7 @@ function slack (text, id) {
 
 function cacheData () {
   const start = Date.now()
-  fetch('https://api.github.com/search/repositories?q=user:zeit', {
+  fetch('https://api.github.com/orgs/zeit/repos', {
     headers: {
       Accept: 'application/vnd.github.preview'
     }
@@ -44,14 +44,10 @@ function cacheData () {
   .then((data_) => {
     if (!data_) return
 
-    if (!data_.items) {
-      return logError(`Error: GitHub missing \`items\` in response`)
-    }
-
     // ugly hack because github sometimes doesn't return
     // all the right search results :|
     let featured = 0
-    data_.items.forEach(({ name }) => {
+    data_.forEach(({ name }) => {
       if (name === 'hyper' || name === 'next.js' || name === 'micro') {
         featured++
       }
@@ -61,12 +57,15 @@ function cacheData () {
       return logError(`Error: GitHub did not include all projects (${featured})`)
     }
 
-    data = data_.items.map(({ name, description, stargazers_count, html_url }) => ({
+    data = data_.map(({ name, description, stargazers_count, html_url }) => ({
       name,
       description,
       url: html_url,
       stars: stargazers_count
-    }))
+    })).sort((p1, p2) =>
+      p2.stars - p1.stars
+    )
+
     log(`Re-built projects cache. ` +
         `Total: ${data.length} public ▲ZEIT projects. ` +
         `Elapsed: ${(new Date - start)}ms`)
