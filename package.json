@@ -2,11 +2,23 @@
   "name": "zeit-github-projects",
   "private": true,
   "scripts": {
-    "start": "micro"
+    "start": "micro",
+    "test": "xo"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "semicolon": false,
+    "rules": {
+      "camelcase": 0
+    }
   },
   "dependencies": {
     "micro": "^6.1.0",
     "ms": "^0.7.2",
     "node-fetch": "^1.6.3"
+  },
+  "devDependencies": {
+    "xo": "^0.17.1"
   }
 }
