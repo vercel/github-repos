@@ -33,3 +33,7 @@ npm start
 3. Start making changes and open a pull request once they're ready!
 
 You can use `npm test` to run the tests and see if your changes have broken anything.
+
+## Author
+
+Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo)) - [▲ZEIT](https://zeit.co)
