@@ -13,6 +13,9 @@
       "camelcase": 0
     }
   },
+  "now": {
+    "alias": "zeit-github-projects.now.sh"
+  },
   "dependencies": {
     "micro": "6.1.0",
     "ms": "0.7.2",
