@@ -14,11 +14,11 @@ cacheData()
 setInterval(cacheData, ms('15m'))
 
 function log(text) {
-  return slack(text, 'T0CAQ00TU/B3BTWAJLR/Lyo5DjtFTFILfRPfUAa5yLoQ')
+  return slack(text, process.env.TOKEN_EVENTS)
 }
 
 function logError(text) {
-  return slack(text, 'T0CAQ00TU/B3D9078A3/hlmwh17yhjGztTKmBzCQG7lV')
+  return slack(text, process.env.TOKEN_ALERTS)
 }
 
 function slack(text, id) {
