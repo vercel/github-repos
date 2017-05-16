@@ -18,11 +18,11 @@
     "alias": "zeit-github-projects.now.sh"
   },
   "dependencies": {
-    "micro": "6.1.0",
-    "ms": "0.7.2",
+    "micro": "7.3.3",
+    "ms": "2.0.0",
     "node-fetch": "1.6.3"
   },
   "devDependencies": {
-    "xo": "0.17.1"
+    "xo": "0.18.2"
   }
 }
