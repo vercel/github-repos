@@ -15,7 +15,7 @@
     }
   },
   "now": {
-    "alias": "zeit-github-projects.now.sh"
+    "alias": "github-repos.zeit.sh"
   },
   "dependencies": {
     "micro": "7.3.3",
