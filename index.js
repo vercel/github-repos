@@ -9,7 +9,7 @@ module.exports = async (req, res) => {
   return data
 }
 
-// cache data now and every X ms
+// Cache data now and every X ms
 cacheData()
 setInterval(cacheData, ms('15m'))
 
@@ -46,7 +46,7 @@ function cacheData() {
       return
     }
 
-    // ugly hack because github sometimes doesn't return
+    // Ugly hack because github sometimes doesn't return
     // all the right search results :|
     let featured = 0
     data_.forEach(({name}) => {
