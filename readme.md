@@ -1,6 +1,6 @@
-# github-projects
+# github-repos
 
-[![Build Status](https://travis-ci.org/zeit/github-projects.svg?branch=master)](https://travis-ci.org/zeit/github-projects)
+[![Build Status](https://travis-ci.org/zeit/github-repos.svg?branch=master)](https://travis-ci.org/zeit/github-repos)
 [![Slack Channel](http://zeit-slackin.now.sh/badge.svg)](https://zeit.chat/)
 
 Microservice to cache and expose GitHub projects for [this page](https://zeit.co/oss).
