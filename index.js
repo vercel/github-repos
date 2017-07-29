@@ -30,7 +30,7 @@ function slack(text, id) {
 
 function cacheData() {
   const start = Date.now()
-  fetch('https://api.github.com/orgs/zeit/repos', {
+  fetch('https://api.github.com/orgs/zeit/repos?per_page=100', {
     headers: {
       Accept: 'application/vnd.github.preview'
     }
