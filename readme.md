@@ -17,7 +17,7 @@ npm install
 And run the server:
 
 ```bash
-npm start
+npm run dev
 ```
 
 ## API
