@@ -4,6 +4,7 @@
   "version": "2.1.0",
   "scripts": {
     "start": "micro",
+    "dev": "micro-dev",
     "test": "xo"
   },
   "xo": {
@@ -18,11 +19,12 @@
     "alias": "github-repos.zeit.sh"
   },
   "dependencies": {
-    "micro": "7.3.3",
+    "micro": "8.0.1",
     "ms": "2.0.0",
     "node-fetch": "1.7.1"
   },
   "devDependencies": {
+    "micro-dev": "1.0.2",
     "xo": "0.18.2"
   }
 }
