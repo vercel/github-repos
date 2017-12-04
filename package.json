@@ -19,12 +19,12 @@
     "alias": "github-repos.zeit.sh"
   },
   "dependencies": {
-    "micro": "8.0.1",
-    "ms": "2.0.0",
-    "node-fetch": "1.7.1"
+    "micro": "9.0.2",
+    "ms": "2.1.1",
+    "node-fetch": "1.7.3"
   },
   "devDependencies": {
-    "micro-dev": "1.0.2",
+    "micro-dev": "2.0.0",
     "xo": "0.18.2"
   }
 }
