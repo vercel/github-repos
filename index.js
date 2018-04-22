@@ -69,7 +69,6 @@ function cacheData() {
       }))
       .sort((p1, p2) => p2.stars - p1.stars)
 
-
     log(`Re-built projects cache. ` +
         `Total: ${data.length} public ▲ZEIT projects. ` +
         `Elapsed: ${(new Date() - start)}ms`)
