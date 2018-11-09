@@ -59,14 +59,15 @@ function cacheData() {
       return logError(`Error: GitHub did not include all projects (${featured})`)
     }
 
-    data = data_.map(({name, description, stargazers_count, html_url}) => ({
-      name,
-      description,
-      url: html_url,
-      stars: stargazers_count
-    })).sort((p1, p2) =>
-      p2.stars - p1.stars
-    )
+    data = data_
+      .filter(repo => !repo.archived)
+      .map(({name, description, stargazers_count, html_url}) => ({
+        name,
+        description,
+        url: html_url,
+        stars: stargazers_count
+      }))
+      .sort((p1, p2) => p2.stars - p1.stars)
 
     log(`Re-built projects cache. ` +
         `Total: ${data.length} public ▲ZEIT projects. ` +
