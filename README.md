@@ -1,8 +1,7 @@
 # github-repos
 
 [![Build Status](https://travis-ci.org/zeit/github-repos.svg?branch=master)](https://travis-ci.org/zeit/github-repos)
-[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
-[![Slack Channel](http://zeit-slackin.now.sh/badge.svg)](https://zeit.chat/)
+[![Code Style](https://badgen.net/badge/code%20style/airbnb/fd5c63)](https://github.com/airbnb/javascript)
 
 Microservice to cache and expose GitHub projects for [this page](https://zeit.co/oss).
 

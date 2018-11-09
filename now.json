@@ -1,0 +1,8 @@
+{
+    "version": 2,
+    "alias": "github-repos.zeit.sh",
+    "regions": [ "bru", "sfo" ],
+    "builds": [
+        { "src": "index.js", "use": "@now/node" }
+    ]
+}
