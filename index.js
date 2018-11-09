@@ -16,7 +16,7 @@ const logError = text => slack(text, process.env.TOKEN_ALERTS);
 const getData = async () => {
   const start = Date.now();
 
-  const response = fetch(
+  const response = await fetch(
     'https://api.github.com/orgs/zeit/repos?per_page=100',
     {
       headers: {
