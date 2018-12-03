@@ -1,3 +1,9 @@
+------
+
+**DEPRECATED:** This API is now included in [api-zeit](https://github.com/zeit/api-zeit).
+
+------
+
 # github-repos
 
 [![Build Status](https://travis-ci.org/zeit/github-repos.svg?branch=master)](https://travis-ci.org/zeit/github-repos)
